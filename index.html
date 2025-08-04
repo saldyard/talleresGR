@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Talleres Gómez & Rueda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER + BANNER -->
+  <header>
+    <div class="banner hover-anim">
+      <img src="banner.png" alt="Banner Talleres Gómez & Rueda" loading="lazy" />
+    </div>
+
+    <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul id="menu">
+        <li class="has-submenu">
+          <a href="#servicios" aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <ul class="submenu">
+            <li><a href="#mecanica">Mecánica General</a></li>
+            <li><a href="#carroceria">Carrocería</a></li>
+            <li><a href="#pre-itv">Pre-ITV</a></li>
+          </ul>
+        </li>
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="servicios" class="bloque scroll-anim">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Carrocería: reparamos arañazos, golpes y desperfectos.</li>
+        <li>Diagnosis: contamos con maquinaria de diagnosis de vehículos.</li>
+        <li>Inyección: inyección de gasolina y diesel; realizamos diagnosis, mantenimiento y reparación.</li>
+        <li>Mantenimiento: mantenimiento periódico para evitar la pérdida de garantía oficial del fabricante.</li>
+        <li>Cambio de aceite de cajas de cambio automáticas.</li>
+        <li>Climatización.</li>
+        <li>Frenos.</li>
+        <li>Mecánica general.</li>
+        <li>Mecánica rápida.</li>
+        <li>Pre-ITV.</li>
+        <li>Tubo de escape.</li>
+      </ul>
+    </section>
+
+    <section id="mecanica" class="bloque servicio-item scroll-anim">
+      <h3>Mecánica General</h3>
+      <p>Revisión, diagnóstico y reparación de sistemas mecánicos y electrónicos del automóvil.</p>
+      <img src="mecanica.jpeg" alt="Mecánica General" loading="lazy" class="hover-anim" />
+    </section>
+
+    <section id="carroceria" class="bloque servicio-item scroll-anim">
+      <h3>Carrocería</h3>
+      <p>Chapa, pintura y restauración de daños estéticos con acabado profesional.</p>
+      <img src="carroceria.jpg" alt="Carrocería" loading="lazy" class="hover-anim" />
+    </section>
+
+    <section id="pre-itv" class="bloque servicio-item scroll-anim">
+      <h3>Pre-ITV</h3>
+      <p>Revisión completa y puesta a punto para superar la inspección técnica con éxito.</p>
+      <img src="itv.jpg" alt="Pre-ITV" loading="lazy" class="hover-anim" />
+    </section>
+
+    <section id="quienes-somos" class="bloque scroll-anim">
+      <h2>Quiénes somos</h2>
+      <p>
+        Somos un taller familiar en Málaga con años de experiencia en mecánica,
+        carrocería y atención personalizada. Nuestro compromiso es ofrecerte un
+        servicio honesto, rápido y de calidad.
+      </p>
+
+      <div id="resenas" class="reseñas">
+        <h3>Reseñas</h3>
+        <article class="resena"> <strong>Santi</strong><br/> Local Guide · 33 reseñas · 19 fotos<br/> Hace 3 años<br/> Excelente trato, plazo de respuesta, precio y calidades.<br/> Samuel y su equipo se interesaron en nuestras necesidades y nos dieron la mejor solución para nosotros.<br/> Gran taller y profesionalidad. </article>
+        <article class="resena"> <strong>saldyard</strong><br/> Local Guide · 15 reseñas · 17 fotos<br/> Hace un año<br/> Mejor precio de la zona, me arreglaron la puerta cuando en otro mecánico no lo supieron arreglar.<br/> 100% recomendado! </article>
+        <article class="resena"> <strong>Arwen Game</strong><br/> 1 reseña<br/> Hace un mes<br/> Llevo mucho llevando mis coches al taller porque estoy encantada...<br/> Jose y Samuel son profesionales, serios y transparentes y se agradece... </article>
+        <article class="resena"> <strong>Žygintas Švalkūnas</strong><br/> 3 reseñas<br/> Hace un año<br/> Esos chicos como mecánicos son muy buenos y como personas mejores todavía... </article>
+        <article class="resena"> <strong>Alicia Llorente</strong><br/> 6 reseñas<br/> Hace 2 años<br/> El mejor taller de la zona rápido y muy profesionales, los recomiendo sin ninguna duda. </article>
+      </div>
+    </section>
+
+    <section id="horario" class="bloque scroll-anim">
+      <h2>Horario</h2>
+      <img src="horario.png" alt="Horario del taller" loading="lazy" class="hover-anim" />
+    </section>
+
+    <section id="contacto" class="bloque scroll-anim">
+      <h2>Contacto</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><strong>Dirección:</strong> Calle Agricultores 4, Campillos, Málaga</p>
+          <p><strong>Teléfono:</strong> <a href="tel:+34635284267">635 284 267</a></p>
+          <p><strong>Email:</strong> <a href="mailto:talleresruedaautomocion@gmail.com">talleresruedaautomocion@gmail.com</a></p>
+          <p><strong>Horario:</strong> Lunes a Viernes 07:00 - 15:00</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/talleresgr/?utm_source=ig_web_button_share_sheet" target="_blank">@talleresgr</a></p>
+        </div>
+        <div class="contact-logo">
+          <img src="LOGO_PNG.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" class="hover-anim" />
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.7937199801!2d-4.875905899999999!3d37.0506683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72a52384b5cc2d%3A0x4f0ff47b450f6d33!2sTalleres%20G%C3%B3mez%20%26%20Rueda!5e1!3m2!1ses!2ses!4v1754345881999!5m2!1ses!2ses" 
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>  
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/34635284267" class="whatsapp-float hover-grow" target="_blank" aria-label="Contactar por WhatsApp" rel="noopener">
+    <img src="whatsapp.png" alt="WhatsApp" loading="lazy" />
+    <span>+34 635 284 267</span>
+  </a>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", !isExpanded);
+      menu.classList.toggle("show");
+    });
+
+    // Efecto de scroll
+    const elements = document.querySelectorAll(".scroll-anim");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
