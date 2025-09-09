@@ -22,12 +22,12 @@
         <li class="has-submenu">
           <a href="#servicios" aria-haspopup="true" aria-expanded="false">Servicios</a>
           <ul class="submenu">
-            <li><a href="#mecanica">Mecánica General</a></li>
-            <li><a href="#carroceria">Carrocería</a></li>
-            <li><a href="#pre-itv">Pre-ITV</a></li>
+            <li><a href="#servicios-lista">Lista completa</a></li>
+            <li><a href="#servicios-cards">Destacados</a></li>
           </ul>
         </li>
         <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
         <li><a href="#horario">Horario</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -35,133 +35,202 @@
   </header>
 
   <main>
+    <!-- ===================== SERVICIOS ===================== -->
     <section id="servicios" class="bloque scroll-anim">
       <h2>Servicios</h2>
-      <ul>
-        <b><li>¡Presupuestos sin compromiso!</li></b>
-        <li>Carrocería: reparamos arañazos, golpes y desperfectos.</li>
-        <li>Diagnosis: contamos con maquinaria de diagnosis de vehículos.</li>
-        <li>Inyección: inyección de gasolina y diesel; realizamos diagnosis, mantenimiento y reparación.</li>
-        <li>Mantenimiento: mantenimiento periódico para evitar la pérdida de garantía oficial del fabricante.</li>
-        <li>Frenos.</li>
-        <li>Suspensiones</li>
-        <li>Mecánica general.</li>
-        <li>Mecánica rápida.</li>
-        <li>Pre-ITV.</li>
-        <li>Tubos de escape.</li>
-        <li>Mantenimiento de motos.</li>
-        <li>Carrocería y pintura de motos.</li>
-        <b><li>Trabajamos con la mayoría de compañías de seguros</li></b>
-      </ul>
+
+      <!-- Contenedor principal: LISTA COMPLETA -->
+      <div id="servicios-lista" class="servicios-lista callout">
+        <ul class="lista-servicios">
+          <li class="emphasis">¡Presupuestos sin compromiso!</li>
+          <li>Carrocería: reparamos arañazos, golpes y desperfectos.</li>
+          <li>Diagnosis: contamos con maquinaria de diagnosis de vehículos.</li>
+          <li>Inyección: inyección de gasolina y diesel; realizamos diagnosis, mantenimiento y reparación.</li>
+          <li>Mantenimiento: mantenimiento periódico para evitar la pérdida de garantía oficial del fabricante.</li>
+          <li>Frenos.</li>
+          <li>Suspensiones.</li>
+          <li>Mecánica general.</li>
+          <li>Mecánica rápida.</li>
+          <li>Pre-ITV.</li>
+          <li>Tubos de escape.</li>
+          <li>Mantenimiento de motos.</li>
+          <li>Carrocería y pintura de motos.</li>
+          <li class="emphasis">Trabajamos con la mayoría de compañías de seguros</li>
+        </ul>
+      </div>
+
+      <!-- Tarjetas destacadas (3 imágenes iguales) -->
+      <div id="servicios-cards" class="services-grid">
+        <article class="service-card hover-tilt">
+          <div class="thumb-wrap">
+            <img class="thumb" src="mecanica.jpeg" alt="Mecánica General" loading="lazy" />
+          </div>
+          <h3>Mecánica General</h3>
+          <p>Revisión, diagnóstico y reparación de sistemas mecánicos y electrónicos del automóvil.</p>
+        </article>
+
+        <article class="service-card hover-tilt">
+          <div class="thumb-wrap">
+            <img class="thumb" src="carroceria.jpg" alt="Carrocería" loading="lazy" />
+          </div>
+          <h3>Carrocería</h3>
+          <p>Chapa, pintura y restauración de daños estéticos con acabado profesional.</p>
+        </article>
+
+        <article class="service-card hover-tilt">
+          <div class="thumb-wrap">
+            <img class="thumb" src="itv.jpg" alt="Pre-ITV" loading="lazy" />
+          </div>
+          <h3>Pre-ITV</h3>
+          <p>Revisión completa y puesta a punto para superar la inspección técnica con éxito.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="mecanica" class="bloque servicio-item scroll-anim">
-      <h3>Mecánica General</h3>
-      <p>Revisión, diagnóstico y reparación de sistemas mecánicos y electrónicos del automóvil.</p>
-      <img src="mecanica.jpeg" alt="Mecánica General" loading="lazy" class="hover-anim" />
-    </section>
-
-    <section id="carroceria" class="bloque servicio-item scroll-anim">
-      <h3>Carrocería</h3>
-      <p>Chapa, pintura y restauración de daños estéticos con acabado profesional.</p>
-      <img src="carroceria.jpg" alt="Carrocería" loading="lazy" class="hover-anim" />
-    </section>
-
-    <section id="pre-itv" class="bloque servicio-item scroll-anim">
-      <h3>Pre-ITV</h3>
-      <p>Revisión completa y puesta a punto para superar la inspección técnica con éxito.</p>
-      <img src="itv.jpg" alt="Pre-ITV" loading="lazy" class="hover-anim" />
-    </section>
-
+    <!-- ===================== QUIÉNES SOMOS ===================== -->
     <section id="quienes-somos" class="bloque scroll-anim">
       <h2>Quiénes somos</h2>
       <p>
         Somos un taller en Campillos (Málaga), con años de experiencia en mecánica,
         carrocería y atención personalizada. Nuestro compromiso es ofrecerte un
         servicio honesto, rápido y de calidad.
-      </p>  
-      <p>  
-        Jose Antonio Gomez Rueda, <b>Técnico Superior en Automoción</b>, con <b>8 años</b> de experiencia.
-      </p>  
-      <p>
-        Samuel Rueda Andujar <b>Técnico en Carrocería y pintura</b>, con <b>25 años</b> de experiencia.
       </p>
 
-      <div id="resenas" class="reseñas">
-        <h3>Reseñas</h3>
-        <article class="resena"> <strong>Santi</strong><br/>Hace 3 años<br/> Excelente trato, plazo de respuesta, precio y calidades.<br/> Samuel y su equipo se interesaron en nuestras necesidades y nos dieron la mejor solución para nosotros.<br/> Gran taller y profesionalidad. </article>
-        <article class="resena"> <strong>Sara</strong><br/>Hace un año<br/> Mejor precio de la zona, me arreglaron la puerta cuando en otro mecánico no lo supieron arreglar.<br/> 100% recomendado! </article>
-        <article class="resena"> <strong>Alba</strong><br/> Hace un mes<br/> Llevo mucho llevando mis coches al taller porque estoy encantada...<br/> Jose y Samuel son profesionales, serios y transparentes y se agradece... </article>
-        <article class="resena"> <strong>Žygintas Švalkūnas</strong><br/> Hace un año<br/> Esos chicos como mecánicos son muy buenos y como personas mejores todavía... </article>
-        <article class="resena"> <strong>Alicia Llorente</strong><br/> Hace 2 años<br/> El mejor taller de la zona rápido y muy profesionales, los recomiendo sin ninguna duda. </article>
+      <div class="personas">
+        <div class="persona highlight">
+          <div class="persona-tag">Técnico Superior en Automoción</div>
+          <h3>Jose Antonio Gomez Rueda <span class="xp">8 años de experiencia</span></h3>
+        </div>
+        <div class="persona highlight">
+          <div class="persona-tag">Técnico en Carrocería y Pintura</div>
+          <h3>Samuel Rueda Andujar <span class="xp">25 años de experiencia</span></h3>
+        </div>
       </div>
     </section>
 
+    <!-- ===================== RESEÑAS ===================== -->
+    <section id="resenas" class="bloque scroll-anim">
+      <h2>Reseñas</h2>
+
+      <div class="resenas-header">
+        <a class="review-cta hover-grow" href="#" target="_blank">
+          <img src="resena.png" alt="Escribe una reseña" loading="lazy" />
+          <span>Escribe una reseña</span>
+        </a>
+        <a class="qr-cta hover-grow" href="#" target="_blank">
+          <img class="qr" src="qr_google_reviews.png" alt="QR Google Reviews" loading="lazy" />
+        </a>
+      </div>
+
+      <div id="lista-resenas" class="reseñas-grid">
+        <article class="resena" data-rel="1d">
+          <strong>Inma Mancera</strong><br/>Hace un día · <em>Nueva</em>
+          <p>Me cambiaron el aceite y prepararon el coche para la ITV súper rápido. El mejor taller al que he ido.</p>
+        </article>
+
+        <article class="resena" data-rel="1m">
+          <strong>Alba</strong><br/>Hace un mes
+          <p>Llevo mucho llevando mis coches al taller porque estoy encantada... Jose y Samuel son profesionales, serios y transparentes y se agradece...</p>
+        </article>
+
+        <article class="resena" data-rel="1y">
+          <strong>Sara</strong><br/>Hace un año
+          <p>Mejor precio de la zona, me arreglaron la puerta cuando en otro mecánico no lo supieron arreglar. 100% recomendado!</p>
+        </article>
+
+        <article class="resena" data-rel="1y">
+          <strong>Žygintas Švalkūnas</strong><br/>Hace un año
+          <p>Esos chicos como mecánicos son muy buenos y como personas mejores todavía...</p>
+        </article>
+
+        <article class="resena" data-rel="2y">
+          <strong>Alicia Llorente</strong><br/>Hace 2 años
+          <p>El mejor taller de la zona rápido y muy profesionales, los recomiendo sin ninguna duda.</p>
+        </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Santi</strong><br/>Hace 3 años
+          <p>Excelente trato, plazo de respuesta, precio y calidades. Samuel y su equipo se interesaron en nuestras necesidades y nos dieron la mejor solución para nosotros. Gran taller y profesionalidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== HORARIO ===================== -->
     <section id="horario" class="bloque scroll-anim">
       <h2>Horario</h2>
       <img src="horario.png" alt="Horario del taller" loading="lazy" class="hover-anim" />
     </section>
 
-    <section id="contacto" class="bloque scroll-anim">
-      <h2>Contacto</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p><strong>Dirección:</strong> Calle Agricultores 4, Campillos, Málaga</p>
-          <p><strong>Teléfono:</strong> <a href="tel:+34635284267">635 284 267</a></p>
-          <p><strong>Email:</strong> <a href="mailto:talleresruedaautomocion@gmail.com">talleresruedaautomocion@gmail.com</a></p>
-          <p><strong>Horario:</strong> Lunes a Viernes 07:00 - 15:00</p>
-          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/talleresgr/?utm_source=ig_web_button_share_sheet" target="_blank">@talleresgr</a></p>
-        </div>
+    <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="bloque scroll-anim">
+    <h2>Contacto</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p><strong>Dirección:</strong> Calle Agricultores 4, Campillos, Málaga</p>
+        <p><strong>Teléfono:</strong> <a href="tel:+34635284267">635 284 267</a></p>
+        <p><strong>Email:</strong> <a href="mailto:talleresruedaautomocion@gmail.com">talleresruedaautomocion@gmail.com</a></p>
+        <p><strong>Horario:</strong> Lunes a Viernes 07:00 - 15:00</p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/talleresgr/" target="_blank">@talleresgr</a></p>
+      </div>
+      <div class="contact-visuals">
         <div class="contact-logo">
-          <img src="LOGO_PNG.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" class="hover-anim" />
+          <img src="LOGO_PNG.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" />
+        </div>
+        <div class="contact-card hover-tilt">
+          <img src="Tarjeta_mantenimiento.png" alt="Tarjeta de Mantenimiento Talleres GR" loading="lazy" />
         </div>
       </div>
-      <div class="map-container">
-        <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.7937199801!2d-4.875905899999999!3d37.0506683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72a52384b5cc2d%3A0x4f0ff47b450f6d33!2sTalleres%20G%C3%B3mez%20%26%20Rueda!5e1!3m2!1ses!2ses!4v1754345881999!5m2!1ses!2ses" 
-    width="100%" 
-    height="300" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>  
-      </div>
-    </section>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.7937199801!2d-4.875905899999999!3d37.0506683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72a52384b5cc2d%3A0x4f0ff47b450f6d33!2sTalleres%20G%C3%B3mez%20%26%20Rueda!5e1!3m2!1ses!2ses!4v1754345881999!5m2!1ses!2ses" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>  
+    </div>
+  </section>
+
   </main>
 
+  <!-- BOTÓN WHATSAPP -->
   <a href="https://wa.me/34635284267" class="whatsapp-float hover-grow" target="_blank" aria-label="Contactar por WhatsApp" rel="noopener">
     <img src="whatsapp.png" alt="WhatsApp" loading="lazy" />
     <span>+34 635 284 267</span>
   </a>
 
   <script>
+    // ====== Menú responsive ======
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
-
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", !isExpanded);
       menu.classList.toggle("show");
     });
 
-    // Efecto de scroll
+    // ====== Animación on-scroll ======
     const elements = document.querySelectorAll(".scroll-anim");
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
+        if (entry.isIntersecting) entry.target.classList.add("visible");
       });
-    }, {
-      threshold: 0.1,
-    });
-
+    }, { threshold: 0.1 });
     elements.forEach(el => observer.observe(el));
+
+    // ====== Ordenar reseñas (más reciente primero) ======
+    const contenedor = document.getElementById("lista-resenas");
+    const items = Array.from(contenedor.children);
+    const toDays = (rel) => {
+      const n = parseInt(rel);
+      const unit = rel.replace(/\d+/g, "").toLowerCase();
+      if (unit === "d") return n;
+      if (unit === "m") return n * 30;
+      if (unit === "y") return n * 365;
+      return Number.MAX_SAFE_INTEGER;
+    };
+    items.sort((a, b) => toDays(a.dataset.rel) - toDays(b.dataset.rel));
+    items.forEach(el => contenedor.appendChild(el));
   </script>
 </body>
 </html>
-
-
 
