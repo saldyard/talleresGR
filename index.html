@@ -14,7 +14,9 @@
     </div>
 
     <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-      &#9776;
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
 
     <nav>
@@ -30,9 +32,15 @@
         <li><a href="#resenas">Reseñas</a></li>
         <li><a href="#horario">Horario</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><div id="google_translate_element"></div></li>
+        <li><img src="spanish.png" id="btn-es" alt="Español" class="circle-flag"></li>
+        <li><img src="english.png" id="btn-en" alt="English" class="circle-flag"></li>
+              
       </ul>
     </nav>
   </header>
+
+
 
   <main>
     <!-- ===================== SERVICIOS ===================== -->
@@ -129,8 +137,13 @@
         </article>
 
         <article class="resena" data-rel="1m">
-          <strong>Alba</strong><br/>Hace un mes
-          <p>Llevo mucho llevando mis coches al taller porque estoy encantada... Jose y Samuel son profesionales, serios y transparentes y se agradece...</p>
+          <strong>Arwen</strong><br/>Hace un mes
+          <p>Llevo mucho llevando mis coches al taller porque estoy encantada... Jose y Samuel son profesionales, serios y transparentes y se agradece. e explican super bien las reparaciones necesarias y no intentan ‘venderte’ cosas que no hacen falta, algo que valoro muchísimo. Además, cumplen con los plazos de entrega y el trato al cliente es super bueno. Mi taller de confianza sin duda</p>
+        </article>
+
+        <article class="resena" data-rel="1m">
+          <strong>Andrew</strong><br/>Hace un mes
+          <p>Very helpful honest service. Assisted me in English. Highly recommend.</p>
         </article>
 
         <article class="resena" data-rel="1y">
@@ -139,8 +152,13 @@
         </article>
 
         <article class="resena" data-rel="1y">
+          <strong>Jorge</strong><br/>Hace un año
+          <p>Profesionales y de confianza.</p>
+        </article>
+
+        <article class="resena" data-rel="1y">
           <strong>Žygintas Švalkūnas</strong><br/>Hace un año
-          <p>Esos chicos como mecánicos son muy buenos y como personas mejores todavía...</p>
+          <p>Esos chicos como mecánicos son muy buenos y como personas mejores todavía. Estoy muy agradecido por el esfuerzo que hicieron para ayudarme. Recomendable al 100%</p>
         </article>
 
         <article class="resena" data-rel="2y">
@@ -148,11 +166,47 @@
           <p>El mejor taller de la zona rápido y muy profesionales, los recomiendo sin ninguna duda.</p>
         </article>
 
+        <article class="resena" data-rel="2y">
+          <strong>Lo Cuelo</strong><br/>Hace 2 años
+          <p>Mui buen servicio y rápido y barato</p>
+        </article>
+
         <article class="resena" data-rel="3y">
           <strong>Santi</strong><br/>Hace 3 años
           <p>Excelente trato, plazo de respuesta, precio y calidades. Samuel y su equipo se interesaron en nuestras necesidades y nos dieron la mejor solución para nosotros. Gran taller y profesionalidad.</p>
         </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Jesus Valle Muñoz</strong><br/>Hace 3 años
+          <p>Muy buen trato.</p>
+        </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Joaquín Ramírez</strong><br/>Hace 3 años
+          <p>Profesionalidad garantizada</p>
+        </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Isa jimenez</strong><br/>Hace 3 años
+          <p>Grande profesionales!!!</p>
+        </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Antonio Ramirez</strong><br/>Hace 4 años
+          <p>Profesionales serios y competentes,buen trato y lo mejor buen precio.</p>
+        </article>
+
+        <article class="resena" data-rel="3y">
+          <strong>Antonio Javier</strong><br/>Hace 4 años
+          <p>PSaben encontrar cualquier tipo de problema mecanico como eléctrico, sea un coche o cualquier tipo de moto.</p>
+        </article>
+
       </div>
+
+      <div class="resenas-footer">
+      <button id="toggle-resenas" class="btn-ver-mas">Ver más reseñas</button>
+    </div>
+
     </section>
 
     <!-- ===================== HORARIO ===================== -->
@@ -162,50 +216,61 @@
     </section>
 
     <!-- ===================== CONTACTO ===================== -->
-  <section id="contacto" class="bloque scroll-anim">
-    <h2>Contacto</h2>
-    <div class="contact-content">
-      <div class="contact-info">
-        <p><strong>Dirección:</strong> Calle Agricultores 4, Campillos, Málaga</p>
-        <p><strong>Teléfono:</strong> <a href="tel:+34635284267">635 284 267</a></p>
-        <p><strong>Email:</strong> <a href="mailto:talleresruedaautomocion@gmail.com">talleresruedaautomocion@gmail.com</a></p>
-        <p><strong>Horario:</strong> Lunes a Viernes 07:00 - 15:00</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/talleresgr/" target="_blank">@talleresgr</a></p>
-      </div>
-      <div class="contact-visuals">
-        <div class="contact-logo">
-          <img src="LOGO_PNG.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" />
+      <section id="contacto" class="bloque scroll-anim">
+      <h2>Contacto</h2>
+      <div class="contact-content">
+        <!-- Columna izquierda: datos -->
+        <div class="contact-info">
+          <p><strong>Dirección:</strong> Calle Agricultores 4, Campillos, Málaga</p>
+          <p><strong>Teléfono:</strong> <a href="tel:+34635284267">635 284 267</a></p>
+          <p><strong>Email:</strong> <a href="mailto:talleresruedaautomocion@gmail.com">talleresruedaautomocion@gmail.com</a></p>
+          <p><strong>Horario:</strong> Lunes a Viernes 07:00 - 15:00</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/talleresgr/" target="_blank">@talleresgr</a></p>
+        <div class="contact-slogan scroll-anim">
+          <p>🚗 Tu coche en las <span class="highlight">mejores manos</span>, con más de <span class="highlight">30 años de experiencia</span> en mecánica y carrocería.</p>
         </div>
-        <div class="contact-card hover-tilt">
-          <img src="Tarjeta_mantenimiento.png" alt="Tarjeta de Mantenimiento Talleres GR" loading="lazy" />
         </div>
-      </div>
-    </div>
 
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.7937199801!2d-4.875905899999999!3d37.0506683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72a52384b5cc2d%3A0x4f0ff47b450f6d33!2sTalleres%20G%C3%B3mez%20%26%20Rueda!5e1!3m2!1ses!2ses!4v1754345881999!5m2!1ses!2ses" 
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>  
-    </div>
-  </section>
+        <!-- Columna derecha: logo + tarjeta -->
+        <div class="contact-visuals">
+          <div class="contact-logo">
+            <img src="LOGO_PNG.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" />
+          </div>
+          <div class="contact-card hover-tilt">
+            <img src="Tarjeta_mantenimiento.png" alt="Tarjeta de Mantenimiento Talleres GR" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.7937199801!2d-4.875905899999999!3d37.0506683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72a52384b5cc2d%3A0x4f0ff47b450f6d33!2sTalleres%20G%C3%B3mez%20%26%20Rueda!5e1!3m2!1ses!2ses!4v1754345881999!5m2!1ses!2ses" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>  
+      </div>
+    </section>
+
 
   </main>
 
-  <!-- BOTÓN WHATSAPP -->
+    <!-- BOTÓN WHATSAPP -->
   <a href="https://wa.me/34635284267" class="whatsapp-float hover-grow" target="_blank" aria-label="Contactar por WhatsApp" rel="noopener">
     <img src="whatsapp.png" alt="WhatsApp" loading="lazy" />
     <span>+34 635 284 267</span>
   </a>
 
+  <!-- ====== Scripts ====== -->
   <script>
     // ====== Menú responsive ======
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
+
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", !isExpanded);
       menu.classList.toggle("show");
+      menuToggle.classList.toggle("open");
     });
 
     // ====== Animación on-scroll ======
@@ -230,6 +295,79 @@
     };
     items.sort((a, b) => toDays(a.dataset.rel) - toDays(b.dataset.rel));
     items.forEach(el => contenedor.appendChild(el));
+
+    // ====== Cerrar menú al hacer clic en un enlace ======
+    document.querySelectorAll("nav ul li a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("show");
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", false);
+      });
+    });
+
+    // ====== Ver más reseñas ======
+    const reseñas = document.querySelectorAll("#lista-resenas .resena");
+    const btnToggle = document.getElementById("toggle-resenas");
+
+    // Ocultar todas excepto 3 al inicio
+    reseñas.forEach((r, i) => { if (i > 2) r.style.display = "none"; });
+
+    btnToggle.addEventListener("click", () => {
+      const ocultas = Array.from(reseñas).filter((r, i) => i > 2);
+      const mostrando = ocultas[0].style.display === "block";
+
+      ocultas.forEach(r => r.style.display = mostrando ? "none" : "block");
+      btnToggle.textContent = mostrando ? "Ver más reseñas" : "Ver menos reseñas";
+    });
   </script>
+
+  <!-- ====== Google Translate ====== -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'es', includedLanguages: 'es,en'},
+        'google_translate_element'
+      );
+    }
+
+    // ====== Traducción con banderas ======
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnEs = document.getElementById("btn-es");
+      const btnEn = document.getElementById("btn-en");
+
+      btnEs.addEventListener("click", () => {
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = "es";
+          select.dispatchEvent(new Event("change"));
+        }
+      });
+
+      btnEn.addEventListener("click", () => {
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = "en";
+          select.dispatchEvent(new Event("change"));
+        }
+      });
+    });
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="banner_2.png" alt="Logo Talleres Gómez & Rueda" loading="lazy" />
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/talleresgr/" target="_blank" class="btn-instagram">
+        <img src="Instagram_icon.png" alt="Instagram" class="icon-instagram">
+      </a>
+    </div>
+  </div>
+
+  <p class="footer-copy">Copyright © 2024 Talleres Gómez y Rueda – Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
